@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Crystals Collector</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  ––––––––––––––––––––––––––––––––––––––––––––––––––-->
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/skeleton.css">
+ 
+
+  <!-- Bootstrap and Jquery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="jumbotron container">
+    <h1>Crystals Collector</h1>      
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="nine columns" style="margin-top: 5%">
+        <h5>Directions</h5>
+        <p>Each of the four crystals have a different value.  Click on each crystal until you get a total matching the goal amount.  Be careful not to go over the total or the game will end.</p>
+      </div>
+
+      <div class="three columns" style="margin-top: 5%">
+        <h5>Game Statistics</h5>
+        <p>Wins: <span id="winDisplay">0</span></p>
+        <p>Losses: <span id="lossDisplay">0</span></p>
+      </div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+        <h3>Choose a gem! </h3>
+        <p>Choose an image to gain more points.</p>
+
+
+    <div class="row">
+      <div id = "firstSpot" class="three columns category">
+        <img id = "diamond" class="u-max-full-width" src="assets/images/diamond.jpg">
+      </div>
+      <div id = "secondSpot" class="three columns category">
+        <img id = "ruby" class="u-max-full-width" src="assets/images/ruby.jpeg">
+      </div>
+      <div id = "thirdSpot" class="three columns category">
+        <img id = "opal" class="u-max-full-width" src="assets/images/opal.jpeg">
+      </div>
+      <div id = "fourthSpot" class="three columns category">
+        <img id = "sapphire" class="u-max-full-width" src="assets/images/sapphire.jpg">
+      </div>
+    </div>
+
+        </div>
+  </section>
+
+  <section class="container section">
+    <div class="row">
+      <div class="six columns category" >
+        <h4 id="target"> Target Number </h4>
+        <div class = "wrapper">
+          <p id="targetScore"></p>
+        </div>
+      </div>
+      <div class="six columns category">
+        <h4> Your Score </h4>
+        <p id="score">0</p>
+        
+      </div>
+    </div>
+  </section>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
